@@ -14,7 +14,7 @@
     <a href='https://arxiv.org/abs/xxxx'>
       <img src='https://img.shields.io/badge/Paper-PDF-red?style=flat&logo=arXiv&logoColor=red' alt='Paper PDF'>
     </a>
-    <a href='https://iris0329.github.io/SeeGround/' style='padding-left: 0.5rem;'>
+    <a href='https://seeground.github.io/' style='padding-left: 0.5rem;'>
       <img src='https://img.shields.io/badge/Project-Page-blue?style=flat&logo=Google%20chrome&logoColor=blue' alt='Project Page'>
     </a>
   </p>
