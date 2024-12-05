@@ -3,7 +3,7 @@ import os
 import random
 import numpy as np  
 import sys
-sys.path.insert(0, '/root/Qwen2-VL/SeeGround/')
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 from eval.utils import load_json, calc_iou
 
 def main(pred_dir):

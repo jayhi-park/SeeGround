@@ -1,6 +1,4 @@
 import sys
-
-sys.path.insert(0, "/root/Qwen2-VL/")
 import argparse
 import os
 import random
@@ -10,7 +8,7 @@ from tqdm import tqdm
 from openai import OpenAI
 import json
 
-sys.path.insert(0, "/root/Qwen2-VL/SeeGround/")
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 from inference.projection import render_point_cloud_with_pytorch3d_with_objects
 from inference.utils import (
     parse_response,
