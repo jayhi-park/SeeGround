@@ -22,6 +22,13 @@
 </p>
 
 
+|||
+|----------------------------|----------------------------|
+| ![GIF 1](figs/video25.gif) | ![GIF 2](figs/video15.gif) |
+| ![](figs/resized_1.png)    | ![](figs/resized_2.png)    |
+| ![GIF 3](figs/video30.gif) | ![GIF 4](figs/video50.gif) |
+| ![](figs/resized_3.png)    | ![](figs/resized_4.png)    |
+
 
 # 
 <p align="center">
