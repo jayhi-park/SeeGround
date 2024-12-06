@@ -11,7 +11,7 @@
 
 
 <p align="center">
-    <a href='https://arxiv.org/abs/xxxx'>
+    <a href='https://arxiv.org/abs/2412.04383'>
       <img src='https://img.shields.io/badge/Paper-PDF-red?style=flat&logo=arXiv&logoColor=red' alt='Paper PDF'>
     </a>
     <a href='https://seeground.github.io/' style='padding-left: 0.5rem;'>
@@ -21,6 +21,55 @@
 
 </p>
 
+
+
+<div>
+
+  <div class="columns is-centered" style="display: flex; justify-content: space-between; padding: 5px">
+    <!-- 第一个视频及其介绍 -->
+    <div style="flex: 1; margin-right: 10px; text-align: center;">
+      <video poster="" autoplay="" controls="" muted="" loop=""
+        style="border-radius: 10px; border: 1px solid #ccc; width: 100%;">
+        <source src="./figs/video25.mp4" type="video/mp4">
+      </video>
+      <p>"It is the white keyboard, further from the door."</p>
+    </div>
+    <div style="flex: 1; margin-left: 10px; text-align: center;">
+      <video poster="" autoplay="" controls="" muted="" loop=""
+        style="border-radius: 10px; border: 1px solid #ccc; width: 100%;">
+        <source src="./figs/video15.mp4" type="video/mp4">
+      </video>
+      <p>"Whiteboard with four chairs and desk in front of it."</p>
+    </div>
+  </div>
+
+  <div class="content has-text-justified" style="padding-top: 1px">
+
+  </div>
+  <div class="columns is-centered" style="display: flex; justify-content: space-between; padding: 5px">
+    <div style="flex: 1; margin-right: 10px; text-align: center;">
+      <video poster="" autoplay="" controls="" muted="" loop=""
+        style="border-radius: 10px; border: 1px solid #ccc; width: 100%;">
+        <source src="./figs/video30.mp4" type="video/mp4">
+      </video>
+      <p>"A red felt office chair with plastic wheels is positioned between a cream chair and a blue chair at
+        the desk furthest
+        from the entrance, facing away from the door."</p>
+    </div>
+    <div style="flex: 1; margin-left: 10px; text-align: center;">
+      <video poster="" autoplay="" controls="" muted="" loop=""
+        style="border-radius: 10px; border: 1px solid #ccc; width: 100%;">
+        <source src="./figs/video50.mp4" type="video/mp4">
+      </video>
+      <p>"There is a laptop on the desk in the corner of the room. The laptop is in front of a single person
+        brown leather
+        armchair."</p>
+    </div>
+  </div>
+
+</div>
+
+# 
 <p align="center">
   <img src="./figs/teaser.jpg" alt="Logo" width="100%">
 </p>
@@ -140,7 +189,7 @@ python parse_query/generate_query_data_scanrefer.py
 
 - Nr3D
 ```
-SeeGround/parse_query/generate_query_data_nr3d.py
+python parse_query/generate_query_data_nr3d.py
 ```
 
 ## 5.3. Prediction
