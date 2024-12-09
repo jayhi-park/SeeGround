@@ -68,5 +68,5 @@ def main(pred_dir):
 
 
 if __name__ == '__main__':
-    pred_dir = '/root/Qwen2-VL/outputs/qwen2-vl-72b/scanrefer/test/mask3d/reproduce/pred'
+    pred_dir = '/root/Qwen2-VL/scanrefer/val/qwen2-vl-72b/pred'
     main(pred_dir)

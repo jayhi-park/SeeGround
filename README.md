@@ -126,7 +126,7 @@ python prepare_data/process_feat_3d.py
 python prepare_data/object_lookup_table_nr3d.py
 ```
 
-Alternatively, you can download the preprocessed Object Lookup Table from TODO.
+Alternatively, you can download the [preprocessed Object Lookup Table](https://github.com/user-attachments/files/18056532/seeground_object_lookup_table.zip).
 
 
 # 5. Inference
@@ -176,6 +176,11 @@ python eval/eval_nr3d.py
 ```
 python eval/eval_scanrefer.py
 ```
+
+## 6. Reproduction
+
+- [Qwen2-VL-72B results](https://github.com/user-attachments/files/18056533/seeground_results.zip)
+
 
 # License
 This work is released under the Apache 2.0 license.

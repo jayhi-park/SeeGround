@@ -90,5 +90,5 @@ def main(pred_dir):
 
 if __name__ == '__main__':
 
-    pred_dir = '/root/Qwen2-VL/outputs/qwen2-vl-72b/nr3d/test/mask3d/reproduce-4606/pred'
+    pred_dir = '/root/Qwen2-VL/seeground_results/nr3d/val/qwen2-vl-72b/pred'
     main(pred_dir)
