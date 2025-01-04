@@ -83,7 +83,7 @@ provide the final, accurate 3D position in the scene.
 - [6. Reproduction](#6-reproduction)
 - [7. License](#7-license)
 - [8. Citation](#8-citation)
-- [9. Acknowledgements](#9-acknowledgements)
+- [9. Acknowledgments](#9-acknowledgments)
 
 
 
@@ -221,15 +221,15 @@ This work is released under the Apache 2.0 license.
 If you find this work and code repository helpful, please consider starring it and citing the following paper:
 
 ```
-@inproceedings{li2024seeground,
-  title     = {SeeGround: See and Ground for Zero-Shot Open-Vocabulary 3D Visual Grounding},
-  author    = {Rong Li and Shijie Li and Lingdong Kong and Xulei Yang and Junwei Liang},
-  journal   = {arXiv},
-  year      = {2024},
+@article{li2024seeground,
+  title   = {SeeGround: See and Ground for Zero-Shot Open-Vocabulary 3D Visual Grounding},
+  author  = {Rong Li and Shijie Li and Lingdong Kong and Xulei Yang and Junwei Liang},
+  journal = {arXiv preprint arXiv:2412.04383},
+  year    = {2024},
 }
 ```
 
-# 9. Acknowledgements
+# 9. Acknowledgments
 
 We would like to thank the following repositories for their contributions:
 - [ZSVG3D](https://github.com/CurryYuan/ZSVG3D)
