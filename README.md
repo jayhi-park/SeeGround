@@ -2,20 +2,27 @@
   <h1 align="center">SeeGround: See and Ground for Zero-Shot Open-Vocabulary 3D Visual Grounding</h1>
 
 <p align="center">
-<a href="https://rongli.tech/">Rong Li</a>,
-<a href="https://sj-li.com/">Shijie Li</a>,
-<a href="https://ldkong.com/">Lingdong Kong</a>,
-<a href="https://dawdleryang.github.io/">Xulei Yang</a>,
-<a href="https://junweiliang.me/">Junwei Liang</a>
+  <a href="https://rongli.tech/">Rong Li</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://sj-li.com/">Shijie Li</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://ldkong.com/">Lingdong Kong</a><sup>3</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://dawdleryang.github.io/">Xulei Yang</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://junweiliang.me/">Junwei Liang</a><sup>1,4</sup>
+  <br/>
+  AI Thrust, HKUST(Guangzhou)&nbsp;&nbsp;&nbsp;&nbsp;
+  I2R, A*STAR&nbsp;&nbsp;&nbsp;&nbsp;
+  National University of Singapore&nbsp;&nbsp;&nbsp;&nbsp;
+  CSE, HKUST
 </p>
-
 
 <p align="center">
     <a href='https://arxiv.org/abs/2412.04383'>
       <img src='https://img.shields.io/badge/Paper-PDF-red?style=flat&logo=arXiv&logoColor=red' alt='Paper PDF'>
-    </a>
+    </a>&nbsp;
     <a href='https://seeground.github.io/' style='padding-left: 0.5rem;'>
       <img src='https://img.shields.io/badge/Project-Page-blue?style=flat&logo=Google%20chrome&logoColor=blue' alt='Project Page'>
+    </a>&nbsp;
+    <a href="https://hits.seeyoufarm.com">
+    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Firis0329%2FSeeGround&count_bg=%2300B48B&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visitors&edge_flat=false"/>
     </a>
   </p>
 
@@ -32,7 +39,7 @@
 
 # 
 <p align="center">
-  <img src="./figs/teaser.jpg" alt="Logo" width="100%">
+  <img src="./figs/teaser.png" alt="Logo" width="100%">
 </p>
 
 3D Visual Grounding (3DVG) aims to locate objects in 3D scenes based on textual descriptions, which is essential for applications like augmented reality and robotics. Traditional 3DVG approaches rely on annotated 3D datasets and predefined object categories, limiting scalability and adaptability. To overcome these limitations, we introduce SeeGround, a zero-shot 3DVG framework leveraging 2D Vision-Language Models (VLMs) trained on large-scale 2D data. We propose to represent 3D scenes as a hybrid of query-aligned rendered images and spatially enriched text descriptions, bridging the gap between 3D data and 2D-VLMs input formats. We propose two modules: the Perspective Adaptation Module, which dynamically selects viewpoints for query-relevant image rendering, and the Fusion Alignment Module, which integrates 2D images with 3D spatial descriptions to enhance object localization. Extensive experiments on ScanRefer and Nr3D demonstrate that our approach outperforms existing zero-shot methods by large margins. Notably, we exceed weakly supervised methods and rival some fully supervised ones, outperforming previous SOTA by 7.7% on ScanRefer and 7.1% on Nr3D, showcasing its effectiveness.
@@ -42,7 +49,7 @@
 
 
 <p align="center">
-  <img src="./figs/arch_1.jpg" alt="Logo" width="100%">
+  <img src="./figs/arch_1.png" alt="Logo" width="100%">
 </p>
 
 Overview of the <span style="color: #FF8E26;"><b>See</b></span><span
