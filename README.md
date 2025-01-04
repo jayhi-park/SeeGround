@@ -1,4 +1,6 @@
 <p align="center">
+  <img src="figs/logo-seeground.png" align="center" width="25%">
+  
   <h1 align="center">SeeGround: See and Ground for Zero-Shot Open-Vocabulary 3D Visual Grounding</h1>
 
 <p align="center">
@@ -64,6 +66,27 @@ Finally, the 2D-VLM outputs the target object’s ID, and we retrieve its 3D bou
 provide the final, accurate 3D position in the scene.
 
 
+
+# Table of Content
+- [1. Environment Setup](#1-environment-setup)
+- [2. Download Model Weights](#2-download-model-weights)
+- [3. Download Datasets](#3-download-datasets)
+  - [3.1. ScanRefer](#31-scanrefer)
+  - [3.2. Nr3D](#32-nr3d)
+  - [3.3. Vil3dref Preprocessed Data](#33-vil3dref-preprocessed-data)
+- [4. Data Processing](#4-data-processing)
+- [5. Inference](#5-inference)
+  - [5.1. Deploying VLM Service](#51-deploying-vlm-service)
+  - [5.2. Generating Anchors & Targets](#52-generating-anchors--targets)
+  - [5.3. Predictions](#53-predictions)
+  - [5.4. Evaluations](#54-evaluations)
+- [6. Reproduction](#6-reproduction)
+- [7. License](#7-license)
+- [8. Citation](#8-citation)
+- [9. Acknowledgements](#9-acknowledgements)
+
+
+
 # 1. Environment Setup
 
 We recommend using the [official Docker image](https://hub.docker.com/r/qwenllm/qwenvl) for environment setup
@@ -73,10 +96,10 @@ docker pull qwenllm/qwenvl
 
 # 2. Download Model Weights
 
-
 You can download the qwen2-vl model weights from either of the following sources:
 - [huggingface](https://huggingface.co/collections/Qwen/qwen2-vl-66cee7455501d7126940800d) 
 - [modelscope](https://modelscope.cn/collections/Qwen2-VL-b4ce472a80274b)
+
 
 # 3. Download Datasets
 
@@ -116,7 +139,7 @@ referit3d/
     └── pcd_with_global_alignment
 ```
 
-# 4.Data Processing
+# 4. Data Processing
 
 Download [mask3d pred](https://github.com/CurryYuan/ZSVG3D) first.
 
@@ -140,7 +163,7 @@ Alternatively, you can download the [preprocessed Object Lookup Table](https://g
 
 ## 5.1. Deploying VLM Service
 
-We use `vllm` for deploying vlm. It is recommended to run the following command in a `tmux` session on your server:
+We use `vllm` to deploy the VLM. It is recommended to run the following command in a `tmux` session on your server:
 
 ```
 python -m vllm.entrypoints.openai.api_server --model /your/qwen2-vl-model/path  --served-model-name Qwen2-VL-72B-Instruct --tensor_parallel_size=8
@@ -148,7 +171,7 @@ python -m vllm.entrypoints.openai.api_server --model /your/qwen2-vl-model/path  
 
 The `--tensor_parallel_size` flag controls the number of GPUs required. Adjust it according to your memory resources.
 
-## 5.2. Generating Anchors/Targets
+## 5.2. Generating Anchors & Targets
 
 - ScanRefer
 ```
@@ -160,7 +183,7 @@ python parse_query/generate_query_data_scanrefer.py
 python parse_query/generate_query_data_nr3d.py
 ```
 
-## 5.3. Prediction
+## 5.3. Predictions
 
 - ScanRefer
 ```
@@ -172,7 +195,7 @@ python inference/inference_scanrefer.py
 python inference/inference_nr3d.py
 ```
 
-## 5.4. Evaluation
+## 5.4. Evaluations
 
 - ScanRefer 
 ```
@@ -189,10 +212,11 @@ python eval/eval_scanrefer.py
 - [Qwen2-VL-72B results](https://github.com/user-attachments/files/18056533/seeground_results.zip)
 
 
-# License
+# 7. License
 This work is released under the Apache 2.0 license.
 
-# Citation 
+
+# 8. Citation 
 
 If you find this work and code repository helpful, please consider starring it and citing the following paper:
 
@@ -205,7 +229,7 @@ If you find this work and code repository helpful, please consider starring it a
 }
 ```
 
-# Acknowledgements
+# 9. Acknowledgements
 
 We would like to thank the following repositories for their contributions:
 - [ZSVG3D](https://github.com/CurryYuan/ZSVG3D)
