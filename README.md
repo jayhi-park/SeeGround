@@ -38,32 +38,18 @@
 | ![GIF 3](figs/video30.gif) | ![GIF 4](figs/video50.gif) |
 | ![](figs/resized_3.png)    | ![](figs/resized_4.png)    |
 
-
-# 
-<p align="center">
-  <img src="./figs/teaser.png" alt="Logo" width="100%">
-</p>
-
-3D Visual Grounding (3DVG) aims to locate objects in 3D scenes based on textual descriptions, which is essential for applications like augmented reality and robotics. Traditional 3DVG approaches rely on annotated 3D datasets and predefined object categories, limiting scalability and adaptability. To overcome these limitations, we introduce SeeGround, a zero-shot 3DVG framework leveraging 2D Vision-Language Models (VLMs) trained on large-scale 2D data. We propose to represent 3D scenes as a hybrid of query-aligned rendered images and spatially enriched text descriptions, bridging the gap between 3D data and 2D-VLMs input formats. We propose two modules: the Perspective Adaptation Module, which dynamically selects viewpoints for query-relevant image rendering, and the Fusion Alignment Module, which integrates 2D images with 3D spatial descriptions to enhance object localization. Extensive experiments on ScanRefer and Nr3D demonstrate that our approach outperforms existing zero-shot methods by large margins. Notably, we exceed weakly supervised methods and rival some fully supervised ones, outperforming previous SOTA by 7.7% on ScanRefer and 7.1% on Nr3D, showcasing its effectiveness.
-
-
-# Overview 
+| ![teaser](./figs/teaser.png) |
+|:-|
+| 3D Visual Grounding (3DVG) aims to locate objects in 3D scenes based on textual descriptions, which is essential for applications like augmented reality and robotics. Traditional 3DVG approaches rely on annotated 3D datasets and predefined object categories, limiting scalability and adaptability. 
+| To overcome these limitations, we introduce **SeeGround** :eye:, a zero-shot 3DVG framework leveraging 2D Vision-Language Models (VLMs) trained on large-scale 2D data. We propose to represent 3D scenes as a hybrid of query-aligned rendered images and spatially enriched text descriptions, bridging the gap between 3D data and 2D-VLMs input formats. 
+| We propose two modules: the Perspective Adaptation Module, which dynamically selects viewpoints for query-relevant image rendering, and the Fusion Alignment Module, which integrates 2D images with 3D spatial descriptions to enhance object localization. 
+| Extensive experiments on ScanRefer and Nr3D demonstrate that our approach outperforms existing zero-shot methods by large margins. Notably, we exceed weakly supervised methods and rival some fully supervised ones, outperforming previous SOTA by 7.7% on ScanRefer and 7.1% on Nr3D, showcasing its effectiveness. |
 
 
-<p align="center">
-  <img src="./figs/arch_1.png" alt="Logo" width="100%">
-</p>
-
-Overview of the <span style="color: #FF8E26;"><b>See</b></span><span
-  style="color: #01B1A0;"><b>Ground</b></span> framework. We first use a 2D-VLM to interpret the query,
-identifying both the target object (e.g., "laptop") and a context-providing anchor (e.g., "chair with floral
-pattern"). A dynamic viewpoint is then selected based on the anchor’s position, enabling the capture of a 2D
-rendered image that aligns with the query’s spatial requirements. Using the Object Lookup Table (OLT), we
-retrieve the 3D bounding boxes of relevant objects, project them onto the 2D image, and apply visual prompts
-to mark visible objects, filtering out occlusions. The image with prompts, along with the spatial
-descriptions and query, are then input into the 2D-VLM for precise localization of the target object.
-Finally, the 2D-VLM outputs the target object’s ID, and we retrieve its 3D bounding box from the OLT to
-provide the final, accurate 3D position in the scene.
+## Overview
+| ![framework](./figs/arch_1.png) |
+|:-:|
+| Overview of the **SeeGround** :eye: framework. We first use a 2D-VLM to interpret the query, identifying both the target object (e.g., "laptop") and a context-providing anchor (e.g., "chair with floral pattern"). A dynamic viewpoint is then selected based on the anchor’s position, enabling the capture of a 2D rendered image that aligns with the query’s spatial requirements. Using the Object Lookup Table (OLT), we retrieve the 3D bounding boxes of relevant objects, project them onto the 2D image, and apply visual prompts to mark visible objects, filtering out occlusions. The image with prompts, along with the spatial descriptions and query, are then input into the 2D-VLM for precise localization of the target object. Finally, the 2D-VLM outputs the target object’s ID, and we retrieve its 3D bounding box from the OLT to provide the final, accurate 3D position in the scene.
 
 
 
@@ -207,7 +193,7 @@ python eval/eval_nr3d.py
 python eval/eval_scanrefer.py
 ```
 
-## 6. Reproduction
+# 6. Reproduction
 
 - [Qwen2-VL-72B results](https://github.com/user-attachments/files/18056533/seeground_results.zip)
 
