@@ -48,8 +48,9 @@
 
 ## Overview
 | ![framework](./figs/arch_1.png) |
-|:-:|
-| Overview of the **SeeGround** :eye: framework. We first use a 2D-VLM to interpret the query, identifying both the target object (e.g., "laptop") and a context-providing anchor (e.g., "chair with floral pattern"). A dynamic viewpoint is then selected based on the anchor’s position, enabling the capture of a 2D rendered image that aligns with the query’s spatial requirements. Using the Object Lookup Table (OLT), we retrieve the 3D bounding boxes of relevant objects, project them onto the 2D image, and apply visual prompts to mark visible objects, filtering out occlusions. The image with prompts, along with the spatial descriptions and query, are then input into the 2D-VLM for precise localization of the target object. Finally, the 2D-VLM outputs the target object’s ID, and we retrieve its 3D bounding box from the OLT to provide the final, accurate 3D position in the scene.
+|:-|
+| Overview of the **SeeGround** :eye: framework. 
+| We first use a 2D-VLM to interpret the query, identifying both the target object (e.g., "laptop") and a context-providing anchor (e.g., "chair with floral pattern"). A dynamic viewpoint is then selected based on the anchor’s position, enabling the capture of a 2D rendered image that aligns with the query’s spatial requirements. Using the Object Lookup Table (OLT), we retrieve the 3D bounding boxes of relevant objects, project them onto the 2D image, and apply visual prompts to mark visible objects, filtering out occlusions. The image with prompts, along with the spatial descriptions and query, are then input into the 2D-VLM for precise localization of the target object. Finally, the 2D-VLM outputs the target object’s ID, and we retrieve its 3D bounding box from the OLT to provide the final, accurate 3D position in the scene.
 
 
 
