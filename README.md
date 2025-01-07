@@ -45,20 +45,14 @@
 | We propose two modules: the Perspective Adaptation Module, which dynamically selects viewpoints for query-relevant image rendering, and the Fusion Alignment Module, which integrates 2D images with 3D spatial descriptions to enhance object localization. 
 | Extensive experiments on ScanRefer and Nr3D demonstrate that our approach outperforms existing zero-shot methods by large margins. Notably, we exceed weakly supervised methods and rival some fully supervised ones, outperforming previous SOTA by 7.7% on ScanRefer and 7.1% on Nr3D, showcasing its effectiveness. |
 
-
-## Overview
-| ![framework](./figs/arch_1.png) |
-|:-|
-| Overview of the **SeeGround** :eye: framework. 
-| We first use a 2D-VLM to interpret the query, identifying both the target object (e.g., "laptop") and a context-providing anchor (e.g., "chair with floral pattern"). A dynamic viewpoint is then selected based on the anchor’s position, enabling the capture of a 2D rendered image that aligns with the query’s spatial requirements. Using the Object Lookup Table (OLT), we retrieve the 3D bounding boxes of relevant objects, project them onto the 2D image, and apply visual prompts to mark visible objects, filtering out occlusions. The image with prompts, along with the spatial descriptions and query, are then input into the 2D-VLM for precise localization of the target object. Finally, the 2D-VLM outputs the target object’s ID, and we retrieve its 3D bounding box from the OLT to provide the final, accurate 3D position in the scene.
-
-
-# Update
-- \[2025.01\] The code and model checkpoints have been fully released. Feel free to try it out! :hugs:
+## :memo: Update
+- \[2025.01\] The **code** and **model checkpoints** have been fully released. Feel free to try it out! :hugs:
 - \[2024.12\] Introducing **SeeGround** :eye:, a new framework towards zero-shot 3D visual grounding. For more details, kindly refer to our [Project Page](https://seeground.github.io/) and [Preprint](https://arxiv.org/abs/2412.04383). :rocket:
 
 
+
 # Table of Content
+- [0. Framework Overview](#0-framework-overview)
 - [1. Environment Setup](#1-environment-setup)
 - [2. Download Model Weights](#2-download-model-weights)
 - [3. Download Datasets](#3-download-datasets)
@@ -76,6 +70,12 @@
 - [8. Citation](#8-citation)
 - [9. Acknowledgments](#9-acknowledgments)
 
+
+# 0. Framework Overview
+| ![framework](./figs/arch_1.png) |
+|:-|
+| Overview of the **SeeGround** :eye: framework. 
+| We first use a 2D-VLM to interpret the query, identifying both the target object (e.g., "laptop") and a context-providing anchor (e.g., "chair with floral pattern"). A dynamic viewpoint is then selected based on the anchor’s position, enabling the capture of a 2D rendered image that aligns with the query’s spatial requirements. Using the Object Lookup Table (OLT), we retrieve the 3D bounding boxes of relevant objects, project them onto the 2D image, and apply visual prompts to mark visible objects, filtering out occlusions. The image with prompts, along with the spatial descriptions and query, are then input into the 2D-VLM for precise localization of the target object. Finally, the 2D-VLM outputs the target object’s ID, and we retrieve its 3D bounding box from the OLT to provide the final, accurate 3D position in the scene.
 
 
 # 1. Environment Setup
