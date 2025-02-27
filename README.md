@@ -17,16 +17,10 @@
 </p>
 
 <p align="center">
-    <a href='https://arxiv.org/abs/2412.04383'>
-      <img src='https://img.shields.io/badge/Paper-PDF-red?style=flat&logo=arXiv&logoColor=red' alt='Paper PDF'>
-    </a>&nbsp;
-    <a href='https://seeground.github.io/' style='padding-left: 0.5rem;'>
-      <img src='https://img.shields.io/badge/Project-Page-blue?style=flat&logo=Google%20chrome&logoColor=blue' alt='Project Page'>
-    </a>&nbsp;
-    <a href="https://hits.seeyoufarm.com">
-    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Firis0329%2FSeeGround&count_bg=%2300B48B&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visitors&edge_flat=false"/>
-    </a>
-  </p>
+    <a href='https://arxiv.org/abs/2412.04383'><img src='https://img.shields.io/badge/Paper-PDF-red?style=flat&logo=arXiv&logoColor=red' alt='Paper PDF'></a>
+    <a href='https://seeground.github.io/'><img src='https://img.shields.io/badge/Project-Page-blue?style=flat&logo=Google%20chrome&logoColor=blue' alt='Project Page'></a>
+    <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Firis0329%2FSeeGround&count_bg=%2300B48B&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visitors&edge_flat=false"/></a>
+</p>
 
 </p>
 
@@ -46,6 +40,7 @@
 | Extensive experiments on ScanRefer and Nr3D demonstrate that our approach outperforms existing zero-shot methods by large margins. Notably, we exceed weakly supervised methods and rival some fully supervised ones, outperforming previous SOTA by 7.7% on ScanRefer and 7.1% on Nr3D, showcasing its effectiveness. |
 
 ## :memo: Update
+- \[2025.02\] Our paper on **SeeGround** has been accepted to **CVPR 2025**! 🎉 Huge thanks to our collaborators and the community for the support.
 - \[2025.01\] The **code** and **model checkpoints** have been fully released. Feel free to try it out! :hugs:
 - \[2024.12\] Introducing **SeeGround** :eye:, a new framework towards zero-shot 3D visual grounding. For more details, kindly refer to our [Project Page](https://seeground.github.io/) and [Preprint](https://arxiv.org/abs/2412.04383). :rocket:
 
@@ -215,8 +210,8 @@ If you find this work and code repository helpful, please consider starring it a
 @article{li2024seeground,
   title   = {SeeGround: See and Ground for Zero-Shot Open-Vocabulary 3D Visual Grounding},
   author  = {Rong Li and Shijie Li and Lingdong Kong and Xulei Yang and Junwei Liang},
-  journal = {arXiv preprint arXiv:2412.04383},
-  year    = {2024},
+  booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year    = {2025},
 }
 ```
 
