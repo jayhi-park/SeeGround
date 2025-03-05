@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="figs/logo-seeground.png" align="center" width="25%">
+  <img src="figs/seeground-icon-3.png" align="center" width="25%">
   
   <h1 align="center">SeeGround: See and Ground for Zero-Shot Open-Vocabulary 3D Visual Grounding</h1>
 
@@ -40,7 +40,7 @@
 | Extensive experiments on ScanRefer and Nr3D demonstrate that our approach outperforms existing zero-shot methods by large margins. Notably, we exceed weakly supervised methods and rival some fully supervised ones, outperforming previous SOTA by 7.7% on ScanRefer and 7.1% on Nr3D, showcasing its effectiveness. |
 
 ## :memo: Update
-- \[2025.02\] Our paper on **SeeGround** has been accepted to **CVPR 2025**! 🎉 Huge thanks to our collaborators and the community for the support.
+- \[2025.02\] **SeeGround** has been accepted to **CVPR 2025**! 🎉 Huge thanks to our collaborators and the community for the support.
 - \[2025.01\] The **code** and **model checkpoints** have been fully released. Feel free to try it out! :hugs:
 - \[2024.12\] Introducing **SeeGround** :eye:, a new framework towards zero-shot 3D visual grounding. For more details, kindly refer to our [Project Page](https://seeground.github.io/) and [Preprint](https://arxiv.org/abs/2412.04383). :rocket:
 
