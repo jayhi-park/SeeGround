@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="figs/seeground-icon-3.png" align="center" width="25%">
+  <img src="figs/seeground-icon-3.png" align="center" width="20%">
   
   <h1 align="center">SeeGround: See and Ground for Zero-Shot Open-Vocabulary 3D Visual Grounding</h1>
 
