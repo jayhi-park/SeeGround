@@ -1,7 +1,10 @@
-<p align="center">
-  <img src="figs/seeground-icon-3.png" align="center" width="20%">
-  
+
+  <img src="figs/seeground-icon-3.png"  width="10%" align="left">
+
+
+<p align="center">  
   <h1 align="center">SeeGround: See and Ground for Zero-Shot Open-Vocabulary 3D Visual Grounding</h1>
+</p>
 
 <p align="center">
   <a href="https://rongli.tech/">Rong Li</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;
