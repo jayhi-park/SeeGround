@@ -1,5 +1,5 @@
 
-  <img src="figs/seeground-icon-3.png"  width="10%" align="left">
+  <img src="figs/seeground-icon-3.png"  width="12.5%" align="left">
 
 
 <p align="center">  
