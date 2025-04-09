@@ -210,11 +210,11 @@ This work is released under the Apache 2.0 license.
 If you find this work and code repository helpful, please consider starring it and citing the following paper:
 
 ```
-@article{li2024seeground,
-  title   = {SeeGround: See and Ground for Zero-Shot Open-Vocabulary 3D Visual Grounding},
-  author  = {Rong Li and Shijie Li and Lingdong Kong and Xulei Yang and Junwei Liang},
-  booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  year    = {2025},
+@inproceedings{li2025seeground,
+  title     = {SeeGround: See and Ground for Zero-Shot Open-Vocabulary 3D Visual Grounding},
+  author    = {Rong Li and Shijie Li and Lingdong Kong and Xulei Yang and Junwei Liang},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year      = {2025},
 }
 ```
 
