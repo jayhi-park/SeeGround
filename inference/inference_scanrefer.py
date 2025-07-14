@@ -240,31 +240,31 @@ if __name__ == "__main__":
     parser.add_argument(
         "--output_dir",
         # required=True,
-        default="/remote-home/rongli/outputs/qwen2-vl-72b/scanrefer/val",
+        default="/ws/external/outputs/qwen2-vl-72b/scanrefer/val",
         help="Directory to store the output",
     )
     parser.add_argument(
         "--language_annotation_dir",
         # required=True,
-        default="SeeGround/data/scanrefer/query/",
+        default="/ws/external/data/scanrefer/query/",
         help="Parsed language annotation (with anchor and target) file path",
     )
     parser.add_argument(
         "--gt_bbox_dir",
         # required=True,
-        default="SeeGround/data/scanrefer/object_lookup_table/gt",
+        default="/ws/data/scannet/scanrefer/object_lookup_table/gt",
         help="Ground truth bounding box directory",
     )
     parser.add_argument(
         "--pred_bbox_dir",
         # required=True,
-        default="SeeGround/data/scanrefer/object_lookup_table/pred",
+        default="/ws/data/scannet/scanrefer/object_lookup_table/pred",
         help="Predicted bounding box directory",
     )
     parser.add_argument(
         "--pcd_dir",
         # required=True,
-        default='/remote-home/share/vg_datasets/referit3d/scan_data/pcd_with_global_alignment/',
+        default='/ws/data/scannet/referit3d/scan_data/pcd_with_global_alignment/',
         help="",
     )
     parser.add_argument(
@@ -286,7 +286,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--val_file",
         type=str,
-        default="/root/Qwen2-VL/SeeGround/data/scannet/scannetv2_val.txt",
+        default="/ws/external/data/scannet/scannetv2_val.txt",
         help="Path to the validation split file.",
     )
 

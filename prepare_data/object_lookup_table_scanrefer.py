@@ -19,7 +19,7 @@ def load_pred_ins(
     scan_id,
     normalize=True,
     use_scannet200=False,
-    mask3d_pred="/remote-home/share/vg_datasets/mask3d_pred/",
+    mask3d_pred="/ws/data/scannet/mask3d_pred/",
 ):
     root_dir = os.path.join(mask3d_pred, "Mask3d/scannet")
     if use_scannet200:
@@ -206,13 +206,13 @@ if __name__ == "__main__":
     parser.add_argument(
         "--val_file",
         type=str,
-        default="SeeGround/data/scannet/scannetv2_val.txt",
+        default="/ws/external/data/scannet/scannetv2_val.txt",
         help="Path to the validation split file.",
     )
     parser.add_argument(
         "--output_dir",
         type=str,
-        default="SeeGround/data/scanrefer/object_lookup_table/",
+        default="/ws/data/scannet/scanrefer/object_lookup_table/",
         help="Directory to save output results.",
     )
     parser.add_argument(
@@ -222,10 +222,10 @@ if __name__ == "__main__":
         help="Path to the 3D features pickle file.",
     )
     parser.add_argument(
-        "--scan_dir", default="/remote-home/share/vg_datasets/referit3d/scan_data"
+        "--scan_dir", default="/ws/data/scannet/referit3d/scan_data"
     )
     parser.add_argument(
-        "--mask3d_pred", default="/remote-home/share/vg_datasets/mask3d_pred/"
+        "--mask3d_pred", default="/ws/data/scannet/mask3d_pred/"
     )
 
     args = parser.parse_args()

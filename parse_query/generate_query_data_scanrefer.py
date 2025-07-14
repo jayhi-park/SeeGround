@@ -213,7 +213,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--save_dir",
         type=str,
-        default="/root/Qwen2-VL/SeeGround/data/scanrefer/query",
+        default="/ws/external/data/scanrefer/query",
         help="Directory to save data.",
     )
     parser.add_argument(
@@ -231,30 +231,30 @@ if __name__ == "__main__":
     parser.add_argument(
         "--anno_file",
         type=str,
-        default="/root/Qwen2-VL/SeeGround/data/scanrefer/ScanRefer_filtered_val.json",
+        default="/ws/data/scannet/scanrefer/ScanRefer_filtered_val.json",
         help="Path to the annotation file.",
     )
     parser.add_argument(
         "--scan_id_file",
         type=str,
-        default="/remote-home/rongli/data/scannetv2_val.txt",
+        default="/ws/external/data/scannet/scannetv2_val.txt",
         help="Path to the scan ID file.",
     )
     parser.add_argument(
         "--prompt_file",
         type=str,
-        default="SeeGround/prompts/parsing_query.txt",
+        default="/ws/external/prompts/parsing_query.txt",
         help="Path to the prompt file.",
     )
     parser.add_argument(
         "--label_map_file",
         type=str,
-        default="/remote-home/share/vg_datasets/referit3d/official_data/annotations/meta_data/scannetv2-labels.combined.tsv",
+        default="/ws/data/scannet/referit3d/official_data/annotations/meta_data/scannetv2-labels.combined.tsv",
     )
     parser.add_argument(
         "--scan_data",
         type=str,
-        default="/remote-home/share/vg_datasets/referit3d/scan_data",
+        default="/ws/data/scannet/referit3d/scan_data",
     )
 
     args = parser.parse_args()
