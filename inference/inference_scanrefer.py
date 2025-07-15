@@ -172,7 +172,7 @@ def process_room(
             anchors,
             center,
             scan_pc,
-            save_dir=f"/remote-home/rongli/projection_img/{dataset}/qwen2-vl-72b/{room}/{i}",
+            save_dir=f"/ws/LTdata/projection_img/{dataset}/qwen2-vl-2b/{room}/{i}",
             image_size=680,
             draw_id=True,
             draw_img=True,
@@ -240,7 +240,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--output_dir",
         # required=True,
-        default="/ws/external/outputs/qwen2-vl-72b/scanrefer/val",
+        default="/ws/LTdata/outputs/qwen2-vl-72b/scanrefer/val",
         help="Directory to store the output",
     )
     parser.add_argument(

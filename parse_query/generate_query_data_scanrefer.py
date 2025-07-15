@@ -249,7 +249,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--label_map_file",
         type=str,
-        default="/ws/data/scannet/referit3d/official_data/annotations/meta_data/scannetv2-labels.combined.tsv",
+        default="/ws/data/scannet/referit3d/annotations/meta_data/scannetv2-labels.combined.tsv",
     )
     parser.add_argument(
         "--scan_data",
